@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0da9904f-84d5-440c-9567-e8f767abbab1}</ProjectGuid>
-    <RootNamespace>Projectestovi</RootNamespace>
+    <ProjectGuid>{2eebb81b-e689-46c4-afa2-c38834b32ec0}</ProjectGuid>
+    <RootNamespace>Project22</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Projectestovi.cpp" />
+    <ClCompile Include="Project22.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
