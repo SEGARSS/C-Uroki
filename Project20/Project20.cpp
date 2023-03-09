@@ -23,5 +23,4 @@ void main()
 	cout << "Четыре" << endl;
 	cout << "Пять" << endl;
 
-
 }
