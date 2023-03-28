@@ -20,4 +20,4 @@ void main()
 	srand(time(NULL));
 	int arr[3][5];
 	cout << arr[0][2];
-}//
+}
