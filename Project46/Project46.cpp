@@ -3,11 +3,12 @@
 #include<iostream>
 using namespace std;
 
-/*Теория. */
+/*Теория. Дозопалнять */
 
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	// ПОтом удалю
-	//To`
+	
+
+
 }
