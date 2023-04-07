@@ -9,5 +9,5 @@ void main()
 {
 	setlocale(LC_ALL, "ru");
 	// ПОтом удалю
-	//
+	//To`
 }
