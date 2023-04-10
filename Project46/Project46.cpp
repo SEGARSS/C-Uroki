@@ -8,7 +8,7 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "ru");
-	
+	//Попробоват ьвсё залить
 
 
 }
