@@ -24,7 +24,6 @@ void main()
 
 	cout << "foo" << endl;
 	foo(&a,&b,&c); 
-	cout << a << endl;
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
