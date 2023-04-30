@@ -25,6 +25,6 @@ void main()
 {
 	setlocale(LC_ALL, "Ru");
 
-	//Доделать.
+	
 	
 }
