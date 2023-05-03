@@ -49,13 +49,12 @@ void pop_vack(int*& arr, int& size) // Удалем элемент в массиве. (в конце)
 
 void push_back_nach(int*& arr,int& size, const int value) // Добавляет элемент массива. (в начало)
 {
-	int* newArray = new int[size+1];
 	for (int i = 1; i <= size; i++)
 	{
-		newArray[i] = arr[i];
+		newArray[i+1] = arr[i];
 	}
 	newArray[size] = value;
-	size++;
+	newArray[0] = value;
 	delete[] arr;
 	arr = newArray;
 }
@@ -67,13 +66,13 @@ void main()
 	int size = 5;
 	int *arr = new int[size];
 	FillArray(arr, size);
-	ShowArray(arr, size);
+	//ShowArray(arr, size);
 	//push_back(arr, size, 111);
 	//ShowArray(arr, size);
 	//pop_vack(arr, size);
 	//ShowArray(arr, size);
-	push_back_nach(arr,size,111);
-	ShowArray(arr, size);
+	//push_back_nach(arr,size,111);
+	//ShowArray(arr, size);
 	delete[] arr;
 
 }
