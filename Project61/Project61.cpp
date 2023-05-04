@@ -47,14 +47,28 @@ void pop_vack(int*& arr, int& size) // Удалем элемент в массиве. (в конце)
 	arr = newArray;
 }
 
-void push_back_nach(int*& arr,int& size, const int value) // Добавляет элемент массива. (в начало)
+void push_back_nach(int*& arr, int& size, const int value) // Добавляет элемент массива. (в начало)
 {
-	for (int i = 1; i <= size; i++)
+	int* newArray = new int[size + 1];
+	for (int i = 0; i < size; i++)
 	{
-		newArray[i+1] = arr[i];
+		newArray[i + 1] = arr[i];
 	}
-	newArray[size] = value;
 	newArray[0] = value;
+	++size;
+	delete[] arr;
+	arr = newArray;
+}
+
+void pop_vack_nach(int*& arr, int& size) // Удалем элемент в массиве. (в начале)
+{
+	
+	int* newArray = new int[size-1];
+	for (int i = 1; i < size; i++)
+	{
+		newArray[i-1] = arr[i];
+	}
+	size--;
 	delete[] arr;
 	arr = newArray;
 }
@@ -66,15 +80,17 @@ void main()
 	int size = 5;
 	int *arr = new int[size];
 	FillArray(arr, size);
-	//ShowArray(arr, size);
-	//push_back(arr, size, 111);
-	//ShowArray(arr, size);
-	//pop_vack(arr, size);
-	//ShowArray(arr, size);
-	//push_back_nach(arr,size,111);
-	//ShowArray(arr, size);
+	ShowArray(arr, size);
+	push_back(arr, size, 111);
+	ShowArray(arr, size);
+	pop_vack(arr, size);
+	ShowArray(arr, size);
+	push_back_nach(arr,size,111);
+	ShowArray(arr, size);
+	pop_vack_nach(arr, size);
+	ShowArray(arr, size);
 	delete[] arr;
 
 }
 
-/*Доделай. Сделай так чтоб у далить первый элемент и добавить. Чтобы удалить элемент по середине и добавить.*/
+/*Доделай.  Чтобы удалить элемент по середине и добавить.*/
