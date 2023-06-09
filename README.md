@@ -173,9 +173,46 @@ Project11 - Switch. Что это. Пример. Синтаксис. Оператор множественного выбора. 
 
 </details>
 
+<details>
+<summary> 
+Project12 - Циклы. Цикл while. Что это. Что делает. Пример. Синтаксис. Урок #14. - видео 19.
+</summary>
 
+* [Ссылка на видео - 19](https://www.youtube.com/watch?v=zPi163Xo4m8&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=19)
+* Цикл while - Базовый принцип и его приминение.
 
+</details>
 
+<details>
+<summary> 
+Project13 - Циклы. Цикл do while. Что это. Что делает. Пример. Синтаксис. Урок #15. - видео 20.
+</summary>
 
+* [Ссылка на видео - 20](https://www.youtube.com/watch?v=AFTfqXdrYBQ&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=20)
+* Цикл do while - это дополнение, чтобы на экран пользователь при необходимости
+получил дополнительную информацию.
+* К примеру в цикле мы указли покажи нам всё от 0 до 10, до добавив условие
+do while, он покажет нам не до 10, но и само 10 включительно если необходимо.
 
+</details>
+
+<details>
+<summary> 
+Project14_dz - Работа с циклами. Примеры. Цикл while. Домашнее задание #4. - видео 21.
+</summary>
+
+* [Ссылка на видео - 21](https://www.youtube.com/watch?v=BJShopyg4G0&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=21)
+* Подробный разбор написания программы с помощью цикла while.
+
+</details>
+
+<details>
+<summary> 
+Project15_dz - Работа с циклами. Примеры. Цикл Do while. Домашнее задание #5. - видео 22.
+</summary>
+
+* [Ссылка на видео - 22](https://www.youtube.com/watch?v=gNoqm6aAzM0&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=22)
+* Подробный разбор написания программы с помощью цикла Do while.
+
+</details>
 
