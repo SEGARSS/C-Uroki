@@ -1,4 +1,4 @@
-/* лючевое слово continue c++ что это.Оператор continue.Пример.Синтаксис.Урок #19.*/
+/*Ключевое слово continue c++ что это. Оператор continue. Пример. Синтаксис. Урок #19. Видео - 26.*/
 
 #include<iostream>
 using namespace std;
