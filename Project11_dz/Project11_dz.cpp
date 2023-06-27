@@ -1,4 +1,4 @@
-//Написать программу калькулятор с помощью switch.
+//Написать программу калькулятор с  помощью switch.
 
 #include<iostream>
 using namespace std;
