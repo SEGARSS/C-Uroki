@@ -1,11 +1,11 @@
-//Изменить размер массива. Удалить. Добавить элемент в массив. Увеличение массива. с++ Урок #59
+//РР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°. РЈРґР°Р»РёС‚СЊ. Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІ. РЈРІРµР»РёС‡РµРЅРёРµ РјР°СЃСЃРёРІР°. СЃ++ РЈСЂРѕРє #59
 
 #include<iostream>
 #include<string>
 #include<ctime>
 using namespace std;
 
-void FillArray(int* const arr, const int size) // Заполняет массив данными.
+void FillArray(int* const arr, const int size) // Р—Р°РїРѕР»РЅСЏРµС‚ РјР°СЃСЃРёРІ РґР°РЅРЅС‹РјРё.
 {
 	for (int i = 0; i < size; i++)
 	{
@@ -13,7 +13,7 @@ void FillArray(int* const arr, const int size) // Заполняет массив данными.
 	}
 }
 
-void ShowArray(const int* const arr, const int size) // выводит данные в терминал массива.
+void ShowArray(const int* const arr, const int size) // РІС‹РІРѕРґРёС‚ РґР°РЅРЅС‹Рµ РІ С‚РµСЂРјРёРЅР°Р» РјР°СЃСЃРёРІР°.
 {
 	for (int i = 0; i < size; i++)
 	{
@@ -22,7 +22,7 @@ void ShowArray(const int* const arr, const int size) // выводит данные в термина
 	cout << endl;
 } 
 
-void push_back(int*& arr, int& size, const int value) // Добавляет элемент массива. ( в конец)
+void push_back(int*& arr, int& size, const int value) // Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°. ( РІ РєРѕРЅРµС†)
 {
 	int* newArray = new int[size+1];
 	for (int i = 0; i < size; i++)
@@ -35,7 +35,7 @@ void push_back(int*& arr, int& size, const int value) // Добавляет элемент масси
 	arr = newArray;
 } 
 
-void pop_vack(int*& arr, int& size) // Удалем элемент в массиве. (в конце)
+void pop_vack(int*& arr, int& size) // РЈРґР°Р»РµРј СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІРµ. (РІ РєРѕРЅС†Рµ)
 {
 	size--;
 	int* newArray = new int[size];
@@ -47,7 +47,7 @@ void pop_vack(int*& arr, int& size) // Удалем элемент в массиве. (в конце)
 	arr = newArray;
 }
 
-void push_back_nach(int*& arr, int& size, const int value) // Добавляет элемент массива. (в начало)
+void push_back_nach(int*& arr, int& size, const int value) // Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°. (РІ РЅР°С‡Р°Р»Рѕ)
 {
 	int* newArray = new int[size + 1];
 	for (int i = 0; i < size; i++)
@@ -60,7 +60,7 @@ void push_back_nach(int*& arr, int& size, const int value) // Добавляет элемент 
 	arr = newArray;
 }
 
-void pop_vack_nach(int*& arr, int& size) // Удалем элемент в массиве. (в начале)
+void pop_vack_nach(int*& arr, int& size) // РЈРґР°Р»РµРј СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІРµ. (РІ РЅР°С‡Р°Р»Рµ)
 {
 	
 	int* newArray = new int[size-1];
@@ -93,4 +93,4 @@ void main()
 
 }
 
-/*Доделай.  Чтобы удалить элемент по середине и добавить.*/
+/*Р”РѕРґРµР»Р°Р№.  Р§С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ СЌР»РµРјРµРЅС‚ РїРѕ СЃРµСЂРµРґРёРЅРµ Рё РґРѕР±Р°РІРёС‚СЊ.*/
