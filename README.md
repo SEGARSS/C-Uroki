@@ -326,6 +326,37 @@ Project22 - Project23_dz - то такое вложенный цикл. Вложенная конструкция. C++ д
 </details>
 
 
+<details>
+<summary> 
+Project24 - Что такое массив. Примеры. Теория. Array. Одномерный массив. Синтаксис. C++. Урок #25. Видео - 33.
+</summary>
+
+* [Ссылка на видео - 33](https://www.youtube.com/watch?v=GJFqT6Kz9NE&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=33)
+* Масив может только из адних данных, тоесть либо цело численный int или дробный dooble и так далее.
+Масив не может состоять и из int и из dooble, только чтото одно.
+* Примеры его объявление.
+
+</details>
+
+<details>
+<summary> 
+Project25 - Инициализация массива. Способы. Инициализация массива нулями. C++ для начинающих. Урок #26. - Видео 34.
+</summary>
+
+* [Ссылка на видео - 34](https://www.youtube.com/watch?v=7q-SbRdW_24&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=34)
+
+</details>
+
+</details>
+
+<details>
+<summary> 
+Project26 - Вывод массива. Массивы и циклы. Цикл с массивом. Array c++. C++ для начинающих. Урок #27 - Видео 35.
+</summary>
+
+* [Ссылка на видео - 35](https://www.youtube.com/watch?v=gKOgCG1PHKI&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=35)
+
+</details>
 
 
 
