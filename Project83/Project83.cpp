@@ -96,7 +96,7 @@ public:
 	~MyClass()
 	{
 		delete[] data;
-		cout << "Îáúåê " << data << " Âûçâàëñÿ äåñòðóêòîð" << endl;
+		cout << "Объек " << data << " Вызвался деструктор" << endl;
 	}
 };
 
