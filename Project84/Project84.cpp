@@ -4,108 +4,73 @@
 #include<string>
 using namespace std;
 
-class Human
-{
-public:
-	int are;
-	int witch;
-	string name;
-};
-
-class CoffeeGrinder
-{
-private:
-	bool CheckVoltage()
-	{
-		return true;
-	}
-
-public:
-	void start()
-	{
-		bool VoltageIsNormal = CheckVoltage();
-		if (VoltageIsNormal == true)
-		{
-			cout << "ViiyyyYYUU" << endl;
-		}
-		else
-		{
-			cout << "NEMA TRR! NEMA TRRR!" << endl;
-		}
-	}
-};
-
-class point
-{
-	int x;
-	int y;
-
-public:
-	point()
-	{
-		x = 0;
-		y = 0;
-		cout << this << " Constructor" << endl;
-
-	}
-	point(int valueX, int valueY)
-	{
-		x = valueX;
-		y = valueY;
-		cout << this << " Constructor" << endl;
-	}
-	int GetX()
-	{
-		return x;
-	}
-	void SetX(int valueX)
-	{
-		x = valueX;
-	}
-
-	int GetY()
-	{
-		return y;
-	}
-	void SetY(int y)
-	{
-		this->y = y;
-	}
-
-	void Print()
-	{
-		cout << "X = " << x << "\t Y = " << y << endl << endl;
-	}
-};
-
 class MyClass
 {
+	
+public:
+
 	int* data;
 
-public:
 	MyClass(int size)
 	{
-		data = new int[size];
+		this->size = size;
+		this->data = new int[size];
 		for (int i = 0; i < size; i++)
 		{
 			data[i] = i;
 		}
-		cout << "Объек " << data << " Вызвался конструктор" << endl;
+		cout << " Вызвался конструктор" << this << endl;
+	}
+
+	MyClass(const MyClass &other)
+	{
+		this->size = other.size;
+
+		this->data = new int[other.size];
+
+		for (int i = 0; i < other.size; i++)
+		{
+			this->data[i] = other.data[i];
+		}
+		cout << " Вызвался конструктор копирования" << this << endl;
 	}
 
 	~MyClass()
 	{
+		cout << " Вызвался деструктор" << this << endl;
 		delete[] data;
-		cout << "Объек " << data << " Вызвался деструктор" << endl;
 	}
+
+private:
+	int size;
 };
+
+void foo(MyClass value)
+{
+	cout << "Вызвалась наша функция foo" << endl;
+}
+
+MyClass foo2()
+{
+	cout << "Вызвалась наша функция foo2" << endl;
+	MyClass temp(2);
+	return temp;
+	
+}
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	
+	//foo2();
+
+	MyClass a(10);
+
+	MyClass b(a);
+
+	//foo(a);
 
 
 	return 0;
 }
+/*Данный урок, создание и реализация конструктора копирования, надо будет не раз пересмотреть. И проанализировать.*/
