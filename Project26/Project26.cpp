@@ -33,11 +33,11 @@ void main()
 	setlocale(LC_ALL, "ru");
 	const int size = 5;
 	int arr[size];
-	for (int i = 0; i < size; )
+	for (int i = 0; i < size; i++)
 	{
 		arr[i] = i;
 	}
-	for (int i = 0; i < size; )
+	for (int i = 0; i < size; i++)
 	{
 		cout << arr[i] << endl;
 	}
