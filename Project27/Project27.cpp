@@ -39,5 +39,8 @@ void main()
 	{
 		cout << arr[i] << endl;
 	}
+	
+	cout << "Объём массива в байтах: - " << sizeof(arr) << endl; 
+	cout << "Длинна массива по количеству елементам: -  " << sizeof(arr) / sizeof(int) << endl;
 
 }
