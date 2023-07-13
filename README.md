@@ -347,8 +347,6 @@ Project25 - Инициализация массива. Способы. Инициализация массива нулями. C++ дл
 
 </details>
 
-</details>
-
 <details>
 <summary> 
 Project26 - Вывод массива. Массивы и циклы. Цикл с массивом. Array c++. C++ для начинающих. Урок #27 - Видео 35.
@@ -357,6 +355,23 @@ Project26 - Вывод массива. Массивы и циклы. Цикл с массивом. Array c++. C++ для 
 * [Ссылка на видео - 35](https://www.youtube.com/watch?v=gKOgCG1PHKI&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=35)
 
 </details>
+
+<details>
+<summary> 
+Project27 - sizeof что это. sizeof c++ массив. Узнать количество элементов массива. sizeof array. Урок #28. - Видео 36.
+</summary>
+
+* [Ссылка на видео - 36](https://www.youtube.com/watch?v=8-HR57Jfaz4&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=36)
+* Размеры типа данных, сколько они занимают байт в памяти. 
+1. char = 1
+2. int = 4
+3. double = 8
+
+</details>
+
+
+
+
 
 
 
