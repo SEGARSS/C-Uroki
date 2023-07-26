@@ -1,4 +1,4 @@
-//rand. srand. rand задать диапазон. srand time null. Генератора случайных чисел. randomize. Урок #29.
+//rand. srand. rand задать диапазон. srand time null. Генератора случайных чисел. randomize. Урок #29. - Видео 37.
 
 #include<iostream>
 #include<ctime>

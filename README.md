@@ -370,6 +370,22 @@ Project27 - sizeof что это. sizeof c++ массив. Узнать количество элементов масси
 
 </details>
 
+<details>
+<summary> 
+Project28 - rand. srand. rand задать диапазон. srand time null. Генератора случайных чисел. randomize. Урок #29. - Видео 37.
+Project29,30 - Реализация домашней работы по данной теме. Видео 38-39.
+</summary>
+
+* [Ссылка на видео - 37](https://www.youtube.com/watch?v=IdvuB3QxQFU&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=37)
+* [Ссылка на видео - 38](https://www.youtube.com/watch?v=cLzJxOwLSB0&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=38)
+* [Ссылка на видео - 39](https://www.youtube.com/watch?v=V9Ab0Xqhu0A&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=39)
+* Функция рандомного заполнения данными, его реализация и написанире.
+* Заполнение масива случайными числами и псевдо случайными числами.
+
+</details>
+
+
+
 
 
 
