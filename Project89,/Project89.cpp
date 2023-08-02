@@ -1,10 +1,8 @@
-//Дружественные функции и классы пример. Для чего используются. Как определяются. Для двух классов #88 - Видео №103.
+//Перегрузка оператора индексирования . Перегрузка операторов пример. C++ Для начинающих. Урок#87 - Видео №102.
 
 #include<iostream>
 #include<string>
 using namespace std;
-
-class Test;
 
 class point
 {
@@ -62,7 +60,6 @@ public:
 	{
 		this->y = y;
 	}
-
 	void Print()
 	{
 		cout << "X = " << x << "\t Y = " << y << endl << endl;
@@ -84,7 +81,7 @@ public:
 
 		return *this;
 	}
-	
+
 	point& operator --(int value) // Инкремент
 	{
 		point temp(*this);
@@ -101,51 +98,34 @@ public:
 
 		return *this;
 	}
-
-	friend void ChangeX(point& value, Test& testvalue);
 };
 
-class Test
+class TestClass
 {
-	int data = 0;
-
-	friend void ChangeX(point& value, Test &testvalue);
 public:
-	void PrintD()
-	{
-		cout << "Тест " << data << endl << endl;
-	}
-};
 
-void ChangeX(point& value, Test& testvalue) // Дружественная функция.
-{
-	value.x = -1;
-	value.y = +5;
-	testvalue.data = 20;
-}
+	int& operator[](int index)
+	{
+		return arr[index];
+	}
+
+private:
+	
+	int arr[5]{ 5,68,4,6,348 };
+};
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	Test test;
+	TestClass a;
 
-	point a(5, 13);
-	a.Print();
-	ChangeX(a, test);
-	a.Print();
-	test.PrintD();
+	cout << a[0] << endl;
+
+	a[0] = 100;
+
+	cout << a[0] << endl;
 
 	return 0;
 }
-
-/*Создали дружественную функцию.
-void ChangeX(point& value, Test& testvalue)
-И подружили её с классами point и класс Test.
-Для того чтобы функцию подружить с классами, необходимо её прописать в нутри классов, причём не важно где, хоть в public: хоть
-в private. Тогда функция ссможет пользоваться данными класса, а клас сможет предоставлять ей доступ.
-Также стоит заметить одну вещь, в функции пристутствует Сразу и клас point и Test, прописав это как в этом уроке в классе point
-вот так - friend void ChangeX(point& value, Test &testvalue); класс не увидит значения класса Test &testvalue, почему?
-Потомучто класс тест Test создан ниже клсса point и не видит какие там есть данные чтоб их подтянуть.
-И для этого выше созданного класса point мы просто прописываем class Test; и тогда класс point будет понимать что он есть,
-и сможет из него брать данные.*/
+/*Реализация работы массива в ООП.*/
