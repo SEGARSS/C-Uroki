@@ -1,7 +1,7 @@
 //Дружественные классы. ООП. friend class. friend c++ что это. C++ Для начинающих. Урок #91 - Видео №107.
 #include<iostream>
 #include<string>
-//Привет
+
 using namespace std;
 
 class Apple;
