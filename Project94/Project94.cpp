@@ -1,4 +1,4 @@
-//static что это. Статические поля класса. Инициализация. Ключевое слово static. C++ #92.
+//static что это. Статические поля класса. Инициализация. Ключевое слово static. C++ #92 - Видео №108.
 #include<iostream>
 #include<string>
 using namespace std;
