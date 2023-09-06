@@ -8,6 +8,7 @@ class A
 public:
 	string msgOne = "Сообщение один";
 private:
+
 	string msgTwo = "Сообщение два";
 protected:
 	string msgThree = "Сообщение три";
@@ -31,6 +32,5 @@ int main()
 
 	return 0;
 }
-
 /*Зачастую использвать при наследии модификатор public - class B : public A. Поле protected:, не даёт напрямую пользваться её
 функцией, но, даёт пользваться её методом. Своеобразная методика защиты.*/
