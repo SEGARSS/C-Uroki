@@ -384,6 +384,39 @@ Project29,30 - Реализация домашней работы по данной теме. Видео 38-39.
 
 </details>
 
+<details>
+<summary> 
+Project31_is - Двумерный массив что это. Многомерные массивы. Пример. Теория. Что такое массив. Array. C++ #30. - Видео 40.
+</summary>
+
+* [Ссылка на видео - 40](https://www.youtube.com/watch?v=JWx_FYIRaVI&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=40)
+* Массив, объявление двухмерного массива, его реализация и вывод данных.
+
+</details>
+
+<details>
+<summary> 
+Project32 - Двумерный массив инициализация. Двумерный массив индексы. Синтаксис. Пример. Урок #31. - Видео 41.
+</summary>
+
+* [Ссылка на видео - 41](https://www.youtube.com/watch?v=JqwUUCZe62M&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=41)
+* Как оборачивать двумерный масив в переменные, для удобства его использования
+в разных методах.
+
+</details>
+
+<details>
+<summary> 
+Project32 - Двумерные массивы вывод. Заполнение. Двумерный массив циклы. C++ для начинающих. #32. - Видео 42.
+</summary>
+
+* [Ссылка на видео - 42](https://www.youtube.com/watch?v=WljDOMwPY_w&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r&index=42)
+* Пример заполнения двухмерного массива случайными числами с помощью цикла for.
+
+</details>
+
+
+
 
 
 
