@@ -13,7 +13,7 @@ public:
 	~List();
 
 	void push_back(T data);
-	int GetSize() {return Size;}
+	int GetSize() { return Size; }
 
 	T& operator[](const int index);
 
@@ -66,7 +66,6 @@ void List<T>::push_back(T data)
 		}
 		current->pNext = new Node<T>(data);
 	}
-
 	Size++;
 }
 //-------------------------------------------------------------------------------------------
@@ -84,7 +83,7 @@ T & List<T>::operator[](const int index)
 			return current->data;
 		}
 		current = current->pNext;
-		current++;
+		counter++;
 	}
 }
 //-------------------------------------------------------------------------------------------
@@ -93,13 +92,19 @@ int main()
 	setlocale(LC_ALL,"ru");
 
 	List<int> lst;
-	lst.push_back(5);
-	lst.push_back(10);
-	lst.push_back(22);
+	int numbersCount;
+	cin>>numbersCount;
 
-	cout << lst[2] << endl;
+	for (int i = 0; i < numbersCount; i++)
+	{
+		lst.push_back(rand()%10);
+	}
+
+	for (int i = 0; i < lst.GetSize(); i++)
+	{
+		cout << lst[i] << endl;
+	}
 
 	return 0;
 }
 //-------------------------------------------------------------------------------------------
-/*Пересмотри Ошибку*/
