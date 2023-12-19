@@ -1,4 +1,4 @@
-//Реализация односвязного списка c++ Часть 1 | Урок #133 - Видео №153-155.
+//Реализация односвязного списка c++ Часть 1-3 | Урок #133 - Видео №153-155.
 
 #include<iostream>
 #include<string>
@@ -12,9 +12,10 @@ public:
 	List();
 	~List();
 
+	void pop_front();
 	void push_back(T data);
+	void clear();
 	int GetSize() { return Size; }
-
 	T& operator[](const int index);
 
 private:
@@ -47,6 +48,20 @@ List<T>::List()
 template<typename T>
 List<T>::~List()
 {
+	cout << "Вызвался диструктор!" << endl;
+	clear();
+}
+//-------------------------------------------------------------------------------------------
+template<typename T>
+void List<T>::pop_front()
+{
+	Node<T> *temp = head;
+
+	head = head->pNext;
+
+	delete temp;
+
+	Size--;
 }
 //-------------------------------------------------------------------------------------------
 template<typename T>
@@ -67,6 +82,14 @@ void List<T>::push_back(T data)
 		current->pNext = new Node<T>(data);
 	}
 	Size++;
+}
+template<typename T>
+void List<T>::clear()
+{
+	while(Size)
+	{
+		pop_front();
+	}
 }
 //-------------------------------------------------------------------------------------------
 template<typename T>
@@ -92,18 +115,20 @@ int main()
 	setlocale(LC_ALL,"ru");
 
 	List<int> lst;
-	int numbersCount;
-	cin>>numbersCount;
-
-	for (int i = 0; i < numbersCount; i++)
-	{
-		lst.push_back(rand()%10);
-	}
+	lst.push_back(5);
+	lst.push_back(10);
+	lst.push_back(623);
 
 	for (int i = 0; i < lst.GetSize(); i++)
 	{
 		cout << lst[i] << endl;
 	}
+
+	cout << endl << "Элементов в списке " << lst.GetSize() << endl << "выполняю метод push_back" << endl << endl;
+
+	lst.clear();
+
+	cout << endl << "Элементов в списке " << lst.GetSize() << endl;
 
 	return 0;
 }
