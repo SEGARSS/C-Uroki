@@ -18,6 +18,11 @@ public:
 	int GetSize() { return Size; }
 	T& operator[](const int index);
 
+	void push_front(T data);
+	void insert(T value, int index);
+	void removeAt(int index);
+	void pop_back();
+
 private:
 
 	template<typename T>
@@ -110,26 +115,111 @@ T & List<T>::operator[](const int index)
 	}
 }
 //-------------------------------------------------------------------------------------------
+template<typename T>
+void List<T>::push_front(T data)
+{
+	head = new Node<T>(data, head);
+	Size++;
+}
+//-------------------------------------------------------------------------------------------
+template<typename T>
+void List<T>::insert(T value, int index)
+{
+	if (index == 0)
+	{
+		push_front(value);
+	}
+	else
+	{
+		Node<T>* previous = this->head;
+
+		for (int i = 0; i < index - 1; i++)
+		{
+			previous = previous->pNext;
+		}
+
+		Node<T> *newNode = new Node<T>(value, previous->pNext);
+		previous->pNext = newNode;
+
+		Size++;
+	}
+	
+}
+//-------------------------------------------------------------------------------------------
+template<typename T>
+void List<T>::removeAt(int index)
+{
+	if (index == 0)
+	{
+		pop_front();
+	}
+	else
+	{
+		Node<T>* previous = this->head;
+
+		for (int i = 0; i < index - 1; i++)
+		{
+			previous = previous->pNext;
+		}
+		///
+		Node<T> *toDelete = previous->pNext;
+
+		previous->pNext = toDelete->pNext;
+
+		delete toDelete;
+
+		Size--;
+	}
+}
+//-------------------------------------------------------------------------------------------
+template<typename T>
+void List<T>::pop_back()
+{
+	removeAt(Size - 1);
+}
+//-------------------------------------------------------------------------------------------
 int main()
 {
 	setlocale(LC_ALL,"ru");
 
 	List<int> lst;
-	lst.push_back(5);
-	lst.push_back(10);
-	lst.push_back(623);
+	lst.push_front(5);
+	lst.push_front(10);
+	lst.push_front(623);
 
 	for (int i = 0; i < lst.GetSize(); i++)
 	{
 		cout << lst[i] << endl;
 	}
 
-	cout << endl << "Ёлементов в списке " << lst.GetSize() << endl << "выполн€ю метод push_back" << endl << endl;
+	lst.insert(99,1); // цифра 1 - это индекс, в какой €чейке индекса положить 99.
 
-	lst.clear();
+	cout << endl << "insert" << endl << endl;
 
-	cout << endl << "Ёлементов в списке " << lst.GetSize() << endl;
+	for (int i = 0; i < lst.GetSize(); i++)
+	{
+		cout << lst[i] << endl;
+	}
+
+	lst.removeAt(1); // ¬ какой €чейке индекса удплить данные
+
+	cout << endl << "removeAt" << endl << endl;
+
+	for (int i = 0; i < lst.GetSize(); i++)
+	{
+		cout << lst[i] << endl;
+	}
+
+	cout << endl << "pop_back" << endl << endl;
+
+	lst.pop_back(); //удалем последний илимент в списке
+
+	for (int i = 0; i < lst.GetSize(); i++)
+	{
+		cout << lst[i] << endl;
+	}
 
 	return 0;
 }
 //-------------------------------------------------------------------------------------------
+/*—ложна€ реализаци€. ѕохожа уже на полность проработанные методы в ќќѕ при реализации проекта.*/
